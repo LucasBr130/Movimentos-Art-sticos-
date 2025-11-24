@@ -1,0 +1,57 @@
+body {
+    background-image: url(imagens/fundo\ do\ site.jpg);
+    background-size: 1700px;
+    background-attachment: fixed;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+p {
+    color: #301f00;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(150, 102, 0);
+}
+
+h2 {
+    text-align: center;
+    color: rgb(150, 102, 0);
+}
+
+img {
+    width: 370px;
+    height: 370px;
+}
+
+.artista {
+    display: flex;
+    width: 1000px;
+    height: 2000px;
+    padding: 10px;
+    background-color: rgb(217, 255, 0);
+    position: right;
+    box-shadow: 0 0 10px 5px #fffee1;
+    top: 140px;
+    right: 560px;
+}
+
+.facedoartista {
+    display: flex;
+    position: left;
+    padding: 10px;
+    width: 370px;
+    height: 370px;
+    background-color: rgb(255, 213, 0);
+}
+
+.artesdoartista {
+    position: absolute;
+    z-index: 10;
+    top: 410px;
+    padding: 10px;
+    width: 370px;
+    height: 370px;
+    background-position-x: 200px;
+    background-color: rgb(255, 213, 0);
+}
