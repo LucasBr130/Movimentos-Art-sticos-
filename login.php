@@ -13,6 +13,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($resultado->num_rows > 0) {
         $usuario = $resultado->fetch_assoc();
 
+        // Regista na tabela auxiliar
+        $id_usuario = $usuario["id"];
+        $acao = "Login no sistema";
+
+        $sql_log = "INSERT INTO logs_usuarios (id_usuario, acao)
+                    VALUES ($id_usuario, '$acao')";
+        $conn->query($sql_log);
+
+
         // Verifica a senha
         if ($senha === $usuario["senha"]) {
             echo "OK";
